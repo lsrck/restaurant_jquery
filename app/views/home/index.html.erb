@@ -1,29 +1,63 @@
 <div class="container">
   <div class="center">
     <div class="top">
+
       <h1>Le meilleur restaurant</h1>
       <p>On mange vraiment super bien</p>
+
+      <div class="carouselcontainer">
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+
+        <div class="carouselimage" onclick="plusSlides(1)" style="display:block">
+          <p> <%= image_tag "img1.jpg" %> </p>
+        </div>
+
+        <div class="carouselimage" onclick="plusSlides(1)">
+          <p> <%= image_tag "img2.jpg" %> </p>
+        </div>
+
+        <div class="carouselimage" onclick="plusSlides(1)">
+          <p> <%= image_tag "img3.jpg" %> </p>
+        </div>
+
+        <div class="carouselimage" onclick="plusSlides(1)">
+          <p> <%= image_tag "img4.jpg" %> </p>
+        </div>
+
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+      </div>
     </div>
+
     <div class="bot">
-    <div class="tab">
-      <button class="tablinks" onclick="openTab(event, 'Présentation')">Présentation</button>
-      <button class="tablinks" onclick="openTab(event, 'Menu')">Menu</button>
-      <button class="tablinks" onclick="openTab(event, 'Equipe')">Equipe</button>
-    </div>
-    <div id="Présentation" class="tabcontent">
-      <h3>Présentation</h3>
-      <p>Présentation du resturant.</p>
-    </div>
+      <div class="tab">
+        <button class="tablinks" onclick="openTab(event, 'Présentation')">Présentation</button>
 
-    <div id="Menu" class="tabcontent">
-      <h3>Menu</h3>
-      <p>Menu du restaurant.</p>
-    </div>
+        <button class="tablinks" onclick="openTab(event, 'Menu')">Menu</button>
 
-    <div id="Equipe" class="tabcontent">
-      <h3>Equipe</h3>
-      <p>Equipe du restaurant.</p>
-    </div>
+        <button class="tablinks" onclick="openTab(event, 'Equipe')">Equipe</button>
+      </div>
+
+      <div id="Présentation" class="tabcontent">
+        <h3>Présentation</h3>
+        <p>Présentation du resturant.</p>
+      </div>
+
+      <div id="Menu" class="tabcontent">
+        <h3>Menu</h3>
+        <p>Menu du restaurant.</p>
+      </div>
+
+      <div id="Equipe" class="tabcontent">
+        <h3>Equipe</h3>
+        <p>Equipe du restaurant.</p>
+      </div>
     </div>
   </div>
 </div>
