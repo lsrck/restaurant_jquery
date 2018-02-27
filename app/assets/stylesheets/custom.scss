@@ -16,7 +16,7 @@ img {
 	  display: flex;
 	  align-items: center;
 	  flex-direction: column;
-	  background-image: url("background.jpg");
+	  background-image: asset-data-url("background.jpg");
 	  background-size: cover;
 }
 
